@@ -2,11 +2,11 @@
 Make great tacos with TacoShop
 # To Build and Run
 
-Install Python 3.7, and Django 2.2
+- Install pipenv `pip install pipenv`
+- Clone TacoShop directory, run `pipenv install` NOTE: Make sure pipfile is in your directory
+- This should install all packages necessary for the project to work
 
-Download all files
-
-navigate to the base /TacoShop/ directory, where you can see manage.py in the same directory. Run `python manage.py runserver` in terminal/powershell/cmd
+- In the same directory, Run `python manage.py runserver` in terminal/powershell/cmd. Make sure manage.py is in your directory
 
 Go to 127.0.0.1:8000 in your browser, and the site will be running there. 
 
