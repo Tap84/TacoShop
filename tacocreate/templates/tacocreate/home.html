@@ -1,0 +1,29 @@
+<h1>Tyler's Terrific Tacos!</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="Submit" name="add">Add</button>
+</form>
+<form method="post" action = "">
+            {% csrf_token %}
+            <input type="hidden" name="random" value="1"/>
+            <input type="submit" value ="Create a fantas-taco" />
+</form>
+
+
+<h4>Your terrific Tacos:</h4>
+{% for item in list %}
+    
+    <li>
+        A taco on {{item.get_shell_choice_display}}
+         filled with {{item.get_base_layer_choice_display}} 
+         and {{item.get_mixin_choice_display}} 
+         with {{item.get_condiment_choice_display}} 
+         and {{item.get_seasoning_choice_display}} on top!  
+        <form method="post" action = "">
+            {% csrf_token %}
+            <input type="hidden" name="delete" value="{{item.id}}"/>
+            <input type="submit" value ="Remove Taco" />
+        </form>
+    </li>  
+{% endfor %}
