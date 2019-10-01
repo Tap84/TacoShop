@@ -5,6 +5,7 @@ Make great tacos with TacoShop
 - Install pipenv `pip install pipenv`
 - Clone TacoShop directory, run `pipenv install` NOTE: Make sure pipfile is in your directory
 - This should install all packages necessary for the project to work
+- Run `pipenv shell` whenever you want to run anything in the virtual environment, which is now
 
 - In the same directory, Run `python manage.py runserver` in terminal/powershell/cmd. Make sure manage.py is in your directory
 
