@@ -43,6 +43,3 @@ def tacoCreation(request):
     }
     return render(request, template_name, context)
 
-class tacoDelete(DeleteView):
-    model = Taco
-    success_url = reverse_lazy('')
